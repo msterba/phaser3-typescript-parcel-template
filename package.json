@@ -1,12 +1,13 @@
 {
 	"name": "phaser3-parcel-template",
 	"version": "1.0.0",
-	"description": "A template project for Phaser3 using Parceljs",
+	"description": "A template project for Phaser3 using TypeScript and Parceljs",
 	"scripts": {
 		"start": "parcel src/index.html -p 8000",
 		"build": "parcel build src/index.html --out-dir dist",
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"lint": "eslint ./src --ext .js,.jsx,.ts,.tsx"
+		"lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
+		"preinstall": "npx npm-force-resolutions"
 	},
 	"author": "supertommy",
 	"license": "MIT",
@@ -15,17 +16,25 @@
 		"url": "https://github.com/ourcade/phaser3-parcel-template.git"
 	},
 	"homepage": "https://github.com/ourcade/phaser3-parcel-template",
+	"private": true,
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^2.29.0",
-		"@typescript-eslint/parser": "^2.29.0",
-		"eslint": "^6.8.0",
+		"@typescript-eslint/eslint-plugin": "^4.6.0",
+		"@typescript-eslint/parser": "^4.6.0",
+		"eslint": "^7.12.1",
 		"minimist": ">=1.2.2",
+		"parcel-bundler": "1.12.4",
 		"parcel-plugin-clean-easy": "^1.0.2",
-		"parcel-plugin-static-files-copy": "^2.4.3",
-		"typescript": "^3.8.3"
+		"parcel-plugin-static-files-copy": "~2.5.0",
+		"prettier": "2.1.2",
+		"tslint-config-prettier": "1.18.0",
+		"typescript": "~4.0.5",
+		"webpack": "4.44.2"
 	},
 	"dependencies": {
 		"phaser": "^3.24.1"
+	},
+	"resolutions": {
+		"node-forge": "~0.10.0"
 	},
 	"parcelCleanPaths": [
 		"dist"

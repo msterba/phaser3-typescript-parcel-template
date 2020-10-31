@@ -1,0 +1,6 @@
+*
+!/src/
+!/src/**
+!.eslintrc.js
+!.prettierrc.json
+!tsconfig.json
