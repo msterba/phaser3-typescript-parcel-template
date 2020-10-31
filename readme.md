@@ -2,9 +2,9 @@
 
 **This is a fork of [ourcade/phaser3-typescript-parcel-template](https://github.com/ourcade/phaser3-typescript-parcel-template)** that was adapted to my needs:
 
-- allow in .gitignore instead of deny
+- gitignore allow instead of deny
 - added prettier
-- attempt to workaround the parcel-bundler -> node-forge vulnerability warning
+- attempt to workaround the parcel-bundler -> node-forge vulnerability warning [parcel-bundler/parcel/issues/5145](https://github.com/parcel-bundler/parcel/issues/5145)
 
 
 # Phaser3 + TypeScript + Parcel Template
